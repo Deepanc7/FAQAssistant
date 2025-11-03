@@ -1,10 +1,10 @@
-# 🧩 FAQ Assistant
+#  FAQ Assistant
 
 FAQ Assistant is a **Spring Boot** backend project that allows users to manage **FAQs**, **categories**, and **tags**, and even generate **AI-powered suggested answers** using the **OpenRouter API** (supports models like LLaMA 3 and Mistral-7B).
 
 ---
 
-## 🚀 Features
+##  Features
 
 -  Manage FAQs with categories and tags  
 -  Generate suggested answers using AI (OpenRouter models)  
@@ -15,7 +15,7 @@ FAQ Assistant is a **Spring Boot** backend project that allows users to manage *
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -29,7 +29,7 @@ FAQ Assistant is a **Spring Boot** backend project that allows users to manage *
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 Follow these steps to get the FAQ Assistant up and running on your local machine.
 
@@ -244,9 +244,3 @@ Open your browser and navigate to:
 
 ---
 
-
-### Next Steps
-
-- 📖 Explore the [API Documentation](#-api-endpoints)
-- 🧪 Run tests: `mvn test`
-- 🚀 Check the [Deployment Guide](#-deployment)
