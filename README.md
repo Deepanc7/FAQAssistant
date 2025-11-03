@@ -72,7 +72,6 @@ spring.jpa.hibernate.ddl-auto=update
 **OpenRouter API Configuration:**
 ```properties
 openrouter.api.key=YOUR_OPENROUTER_API_KEY
-openrouter.api.url=https://openrouter.ai/api/v1/chat/completions
 ```
 
 > **Get your OpenRouter API Key:** Visit [openrouter.ai](https://openrouter.ai/), sign up, and generate an API key from your dashboard.
@@ -174,7 +173,7 @@ curl -X POST localhost:8080/api/faqs/suggest-answer?question=Can I change my reg
 
 **Response:**
 ```json
-Yes, you can change your registered email address. Navigate to your account settings or profile page, locate the email field, and enter your new email address. You may need to verify the new email through a confirmation link sent to your inbox before the change takes effect.
+Yes, go to Account Settings > Email and update your address. A verification email will be sent to confirm the change.
 ```
 
 Now create the FAQ with the generated answer:
