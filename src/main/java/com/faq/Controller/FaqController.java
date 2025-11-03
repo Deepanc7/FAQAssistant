@@ -2,6 +2,7 @@ package com.faq.Controller;
 
 import com.faq.DTO.FaqResponseDTO;
 import com.faq.Entity.Faq;
+import com.faq.Service.AiService;
 import com.faq.Service.IFaqService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,8 +22,16 @@ public class FaqController {
 
     private final IFaqService faqService;
 
-    public FaqController(IFaqService faqService) {
+    private final AiService aiService;
+
+    public FaqController(IFaqService faqService, AiService aiService) {
         this.faqService = faqService;
+        this.aiService = aiService;
+    }
+
+    @PostMapping("/suggest-answer")
+    public String suggestAnswer(@RequestParam String question) {
+        return aiService.generateAnswer(question);
     }
 
     @GetMapping
